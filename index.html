@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Tuo Titolo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0%;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    .title{
+      text-align: center;
+      font-weight: bold;            
+      font-size: 2.5rem;
+    }
+
+    .title2{
+      text-align: center;
+      font-weight: bold; 
+      margin: 3%;           
+      font-size: 1.1rem;
+    }
+
+    header {
+      background-color: hwb(42 0% 60%);
+      background-image: url("incidenti21.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 170px 0;
+      width: 100%;
+    }
+
+    nav {
+      text-align: center;
+      background-color: rgb(231, 130, 69);
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .half {
+      width: 48%;
+    }
+
+    .third {
+      width: 31.5%;
+    }
+
+    .spacer{
+      height: 75px;
+    }
+    .spacer2{
+      height: 40px;
+    }
+
+    .mini_spacer{
+      height: 10px;
+    }
+
+    .text {
+      text-align: justify;
+      font-family: Arial;
+      margin: 1%;
+    }
+
+    .text2 {
+      text-align: center;
+      font-family: Arial;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    .subtitles{
+        font-weight: bold;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .subtitles2{
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .torta{
+      margin: 3%;
+    }
+
+    .header-content {
+      background-color: rgba(231, 130, 69, 0.9); /* Imposta il colore di sfondo con opacità */
+      border: 0px solid #333; /* Aggiungi un bordo solido con spessore di 2px e colore nero (#333) */
+      padding: 20px; /* Aggiungi spaziatura interna */
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#mappa">Maps</a>
+    <a href="#g.torta">Causes</a>
+    <a href="#grafico1">Incident and Injury-Deaths </a>
+    <a href="#eta">Age range</a>
+    <a href="#dati">Data</a>
+
+</nav>
+
+<header class="header">
+  <section id="navbar"></section>
+  <div class="spacer2"></div>
+  <div class="header-content">
+      <div class="title">
+          Human and car, marriage or funeral?
+      </div>
+      <div class="title2">
+          The number of car accidents per year is a relevant parameter for a nation, indeed this kind of events can result in fatalities 
+          and injuries. Therefore, it is important to monitor and prevent road accidents. In the following sections, we present data 
+          related to this issue in Italy, spanning from 1991 to 2022. Our objective is to inform the government about the current situation
+          so that it can take the necessary actions to reduce the number of road accidents.
+      </div>
+  </div>
+</header>
+
+<div class="spacer"></div>
+
+  <div class="subtitles"> Incidents' map </div>
+  <div class="spacer2"></div>
+
+  <section id="mappa">
+    <div class="container">
+      <div class="half">
+        <div class="subtitles2"> Whole numbers </div>
+        <div class="flourish-embed flourish-map" data-src="visualisation/15755010"><script src="https://public.flourish.studio/resources/embed.js"></script></div>  
+        <div class=" text">
+          In the graph, we see that, in absolute numbers, Rome and Milan have the highest number of accidents. This is expected due to their high population density. However, this representation is essential as it helps authorities understand where the greatest need for assistance vehicles is, facilitating better management of accident consequences.
+        </div>
+        <div class=" text2"><A HREF="mappa1.html">Visualisation protocol</A></div>
+      </div>
+      <div class="half ">
+        <div class="subtitles2"> Percentages numbers </div>
+        <div class="flourish-embed flourish-map" data-src="visualisation/16115799"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        <div class=" text">
+          On the other hand, this chart shows the number of accidents per capita. This information is vital because it helps us identify areas where enhancing road safety is needed, emphasizing the importance of prevention and citizen education.
+        </div>
+        <div class=" text2"><A HREF="mappa2.html">Visualisation protocol</A></div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="g.torta"></section>
+    <div class="subtitles"> Incidents' causes </div>
+    <div class="torta">
+      <div class="flourish-embed flourish-hierarchy" data-src="visualisation/16230076"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      <div class=" text2"><A HREF="mappa3.html">Visualisation protocol</A></div>
+    </div>
+  </section>  
+
+
+  <div class="spacer2"></div>
+
+  <div class="subtitles"> Graphs </div>
+
+  <!-- Aggiungi qui le sezioni per Grafico 1 -->
+  <section id="grafico1">
+
+    <div class="text2">    
+      In the following graphs, that share the background's bar chart, we observe that the number of accidents generally increased until 2002, 
+      subsequently decreasing until 2022.
+    </div>
+    
+   <div class="spacer2"></div>
+    <div class="mini_spacer"></div>
+    <div class="container">
+    <div class="half">
+      <div class="subtitles2"> Incident-Deaths</div>
+      <div class="mini_spacer"></div>
+      <div class="flourish-embed flourish-chart" data-src="visualisation/15845506"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div class=" text">
+            
+            We notice that the number of deaths has decreased more rapidly compared to the number 
+            of road accidents, thanks to the improvement in car safety and the reduced severity of impacts.
+       
+          </div>
+      </div>
+      <div class="half">
+        <div class="subtitles2"> Incident-Injuries</div>
+        <div class="mini_spacer"></div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/16031273"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+       
+        <div class=" text">
+          
+          Furthermore, we observe that the number of injuries follows the trend of the number of accidents.
+
+      </div>
+      </div>
+  </section>
+  <div class=" text2"><A HREF="mappa4.html">Visualisation protocol</A></div>
+
+
+
+  <div class="spacer"></div>
+  <div class="subtitles"> Age-range </div>
+  <div class="spacer2"></div>
+  <div class="text2">In this graphs are shown the number of dead and injuried people, divided by gender, that are accountable for their own accident.</div>
+  <section id="eta">
+    <div class="container">
+      <div class="half">
+        <div class="subtitles2"> Deaths </div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/16211882"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      </div>
+      <div class="half">
+        <div class="subtitles2"> Injured </div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/16219539"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      </div>  
+      
+    </div>
+  </section>
+  <div class=" text2"><A HREF="mappa5.html">Visualisation protocol</A></div>
+
+ 
+  <div class="spacer"></div>
+
+  <div class="subtitles"> Data </div>
+  
+  <section id="dati">
+    To visualize the ISTAT page that contains our dataset visit <A HREF="https://www.istat.it/it/archivio/286933"> this link </A> 
+    <ul>
+        <li>
+        Open the table number 1.5 to visualize the data of the vaious italian provinces.
+        </li>
+        <li>
+          Open the table number 2.20 to visualize the data of the causes.
+        </li>
+        <li>
+          Open the table number 4.1 to visualize the data during the years 1991-2022.
+        </li>
+        <li>
+          Open the table number 2.41 to visualize the data of the people that are accountable for an inchident.
+        </li>
+    </ul> 
+  </section>
+
+</body>
+</html>

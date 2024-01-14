@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Tuo Titolo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0%;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    .title{
+      text-align: center;
+      font-weight: bold;            
+      font-size: 2.5rem;
+    }
+
+    .title2{
+      text-align: center;
+      font-weight: bold; 
+      margin: 3%;           
+      font-size: 1.2rem;
+    }
+
+    header {
+      background-color: hwb(42 0% 60%);
+      background-image: url("incidenti21.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 170px 0;
+      width: 100%;
+    }
+
+    nav {
+      text-align: center;
+      background-color: rgb(231, 130, 69);
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .half {
+      width: 48%;
+    }
+
+    .third {
+      width: 31.5%;
+    }
+
+    .spacer{
+      height: 75px;
+    }
+    .spacer2{
+      height: 40px;
+    }
+
+    .mini_spacer{
+      height: 10px;
+    }
+
+    .text {
+      text-align: justify;
+      font-family: Arial;
+      margin: 1%;
+    }
+
+    .text2 {
+      text-align: center;
+      font-family: Arial;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    .subtitles{
+        font-weight: bold;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .subtitles2{
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .torta{
+      margin: 3%;
+    }
+
+    .header-content {
+      background-color: rgba(231, 69, 69, 0.9); /* Imposta il colore di sfondo con opacità */
+      border: 0px solid #333; /* Aggiungi un bordo solido con spessore di 2px e colore nero (#333) */
+      padding: 20px; /* Aggiungi spaziatura interna */
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .body{
+      background-color: rgba(231 130 69);
+      
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0;
+      width: 100%;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <A HREF="index.html">← Back</A>
+</nav>
+
+<div class="body">
+<div class="title">Incidents' Causes</div>
+<div class="title2">Timestamp</div>
+<div class="text2">2022</div>
+
+<div class="title2">Data source</div>
+<div class="text2"><A HREF="https://www.istat.it/it/archivio/286933"> ISTAT </A>\n Tab n. 2.20</div>
+
+<div class="title2">Dataset</div>
+<A HREF="cause.xlsx">Excel</A>
+
+<div class="title2">Protocol</div>
+<div class="text2">
+<ol>
+    We have downloaded the Table from the ISTAT website <br>
+    We have divided the causes in five groups acording to their nature<br>
+    Distraction, speeding, avoiding objects, bumping, falling from a mooving vehicle and other<br>
+    We have also added the cause next to the numbers<br>
+    We have pasted the tables on Flourish<br>
+    We have selected the columns C and A as categories/nesting and the column B as size by<br>
+    We have modified the colours to better mend with our website<br>
+ </ol>
+</div>
+</div>
+</body>
+</html>
