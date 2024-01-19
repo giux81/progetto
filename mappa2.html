@@ -150,7 +150,7 @@
 </nav>
 
 <div class="body">
-<div class="title">Italian map of the accidents</div>
+<div class="title">Car Accidents per 100,000 Inhabitants by Province</div>
 <div class="title2">Timestamp</div>
 <div class="text2">2022</div>
 
@@ -164,15 +164,49 @@
 
 <div class="title2">Protocol</div>
 <div class="text2">
-<ol>
-    We have downloaded the Table from the ISTAT website <br>
-    We have removed the headers<br>
-    We have removed from the miain colums the regions and their values<br>
-    We have pasted the tables on Flourish<br>
-    We have selected the column as ID, NAME and LABEL <br> and the second column as  values "COLOR BY"<br>
-    We have modified the colours to better mend with our website<br>
- </ol>
-</div>
-</div>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <style>
+  body {
+    text-align: center; /* Centra il contenuto del body */
+  }
+  
+  ul {
+    list-style-type: disc; /* Usa 'none' se non vuoi i punti */
+    padding-left: 0; /* Elimina il padding predefinito */
+    text-align: left; /* Testo giustificato a sinistra */
+    display: inline-block; /* Centra l'elenco nel body */
+    text-align: justify; /* Giustifica il testo degli elementi dell'elenco */
+  }
+  
+  ul li {
+    margin: 5px 0; /* Distanza tra gli elementi dell'elenco */
+  }
+  
+  /* Stile personalizzato per i punti, se necessario */
+  ul.custom-bullets li::before {
+    content: "\2022";  /* Bullet Unicode */
+    color: #000; /* Colore dei punti, da modificare a piacimento */
+    font-weight: bold; /* Rende i punti in grassetto */
+    display: inline-block; 
+    width: 1em; /* Spazio prima del testo */
+    margin-left: -1em; /* Allinea i punti a sinistra */
+  }
+  </style>
+  </head>
+  <body>
+  
+  <ul class="custom-bullets">
+    <li>Downloaded the Table from the ISTAT website</li>
+    <li>Removed the headers</li>
+    <li>Removed from the main columns the regions and their values</li>
+    <li>Added a column with the various populations for every province</li>
+    <li>Divided the number of incidents by the population and multiplied by a fixed factor: 100</li>
+    <li>Pasted the tables on Flourish</li>
+    <li>Selected the column as ID, NAME and LABEL and the second column as values "COLOR BY"</li>
+    <li>Modified the colours to better mend with our website</li>
+  </ul>
+  
+  </body>
+  </html>

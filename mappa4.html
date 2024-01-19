@@ -150,7 +150,7 @@
 </nav>
 
 <div class="body">
-<div class="title">Deaths and injuries related to Incidents</div>
+<div class="title">Trends in Car Accident Fatalities and Injuries in Italy (1982-2022)</div>
 <div class="title2">Timestamp</div>
 <div class="text2">1991-2022</div>
 
@@ -162,14 +162,46 @@
 
 <div class="title2">Protocol</div>
 <div class="text2">
-<ol>
-    We have downloaded the Table from the ISTAT website <br>
-    We have removed the headers<br>
-    We have pasted the columns acordingly for the graphs on Flourish<br>
-    We have selected the column A (years) as Labels/time and the column C-B (Incident-Deaths or Incident-Injuries)as values <br>
-    We have modified the colours to better mend with our website<br>
- </ol>
-</div>
-</div>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <style>
+  body {
+    text-align: center; /* Centers content in the body */
+  }
+  
+  ul {
+    list-style-type: disc; /* Uses disc for bullet points */
+    padding-left: 0; /* Removes default padding */
+    text-align: left; /* Left aligns text */
+    display: inline-block; /* Centers the list in the body */
+    text-align: justify; /* Justifies the text of the list items */
+  }
+  
+  ul li {
+    margin: 5px 0; /* Space between list items */
+  }
+  
+  /* Custom bullet style if needed */
+  ul.custom-bullets li::before {
+    content: "\2022";  /* Unicode for bullet */
+    color: #000; /* Color of the bullet */
+    font-weight: bold; /* Makes the bullet bold */
+    display: inline-block; 
+    width: 1em; /* Space before the text */
+    margin-left: -1em; /* Aligns the bullet to the left */
+  }
+  </style>
+  </head>
+  <body>
+  
+  <ul class="custom-bullets">
+    <li>Downloaded the Table from the ISTAT website</li>
+    <li>Removed the headers</li>
+    <li>Pasted the columns accordingly for the graphs on Flourish</li>
+    <li>Selected column A (years) as Labels/time and columns C-B (Incidents-Deaths or Incidents-Injuries) as values</li>
+    <li>Modified the colours to better integrate with the website</li>
+  </ul>
+  
+  </body>
+  </html>

@@ -150,7 +150,7 @@
 </nav>
 
 <div class="body">
-<div class="title">Deaths and injuries related to Incidents</div>
+<div class="title">Gender and Age Distribution of Road Accident Victims in Italy</div>
 <div class="title2">Timestamp</div>
 <div class="text2">2022</div>
 
@@ -162,17 +162,49 @@
 
 <div class="title2">Protocol</div>
 <div class="text2">
-<ol>
-    We have downloaded the Table from the ISTAT website <br>
-    We have selected just the total numbers, diveded by gender<br>
-    We have pasted it over a new Excel file dividing them acording to the age<br>
-    We did this operations for both injuries and deaths<br>
-    We also added a columns that contained the sum of the previous gender-specific columns<br>
-    We have pasted the columns acordingly for the graphs on Flourish<br>
-    We have selected the column A (age) as Labels/time and the column B-c (Males Females)as values <br>
-    We have modified the colours to better mend with our website<br>
- </ol>
-</div>
-</div>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <style>
+  body {
+    text-align: center; /* Centers content in the body */
+  }
+  
+  ul {
+    list-style-type: disc; /* Uses disc for bullet points */
+    padding-left: 0; /* Removes default padding */
+    text-align: left; /* Left aligns text */
+    display: inline-block; /* Centers the list in the body */
+    text-align: justify; /* Justifies the text of the list items */
+  }
+  
+  ul li {
+    margin: 5px 0; /* Space between list items */
+  }
+  
+  /* Custom bullet style if needed */
+  ul.custom-bullets li::before {
+    content: "\2022";  /* Unicode for bullet */
+    color: #000; /* Color of the bullet */
+    font-weight: bold; /* Makes the bullet bold */
+    display: inline-block; 
+    width: 1em; /* Space before the text */
+    margin-left: -1em; /* Aligns the bullet to the left */
+  }
+  </style>
+  </head>
+  <body>
+  
+  <ul class="custom-bullets">
+    <li>Downloaded the Table from the ISTAT website</li>
+    <li>Selected just the total numbers, divided by gender</li>
+    <li>Pasted over a new Excel file dividing them according to the age</li>
+    <li>Conducted these operations for both injuries and deaths</li>
+    <li>Added a column containing the sum of the previous gender-specific columns</li>
+    <li>Pasted the columns accordingly for the graphs on Flourish</li>
+    <li>Selected column A (age) as Labels/time and columns B-C (Males Females) as values</li>
+    <li>Modified the colours to better integrate with the website</li>
+  </ul>
+  
+  </body>
+  </html>

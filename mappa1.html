@@ -150,7 +150,7 @@
 </nav>
 
 <div class="body">
-<div class="title">Italian map of the accidents</div>
+<div class="title">Total Number of Car Accidents per Province</div>
 <div class="title2">Timestamp</div>
 <div class="text2">2022</div>
 
@@ -158,21 +158,62 @@
 <div class="text2"><A HREF="https://www.istat.it/it/archivio/286933"> ISTAT </A>\n Tab n. 1.5</div>
 
 <div class="title2">Dataset</div>
-<A HREF="tavola 1.5 regioni modificata.xls">Excel</A>
+<A HREF="tavola 1.5 regioni modificata.xls">Excel</A> <div class="text2">with regions numbers</div>
+<A HREF="popolazione regioni.xlsx">Excel</A> <div class="text2">with provinces' population</div>
 
 <div class="title2">Protocol</div>
 <div class="text2">
-<ol>
-    We have downloaded the Table from the ISTAT website <br>
-    We have removed the headers<br>
-    We have removed from the miain colums the regions and their values<br>
-    We have added a column with the vaious populations for every province<br>
-    Than we divided the number of incidents for the population and we multiplied for a fixed factor: 100<br>
-    We have pasted the tables on Flourish<br>
-    We have selected the column as ID, NAME and LABEL <br> and the second column as  values "COLOR BY"<br>
-    We have modified the colours to better mend with our website<br>
- </ol>
-</div>
-</div>
-</body>
-</html>
+  </style>
+  </head>
+  <body>
+  
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <style>
+    body {
+      text-align: center; /* Centra il contenuto del body */
+    }
+    
+    ul {
+      list-style-type: disc; /* Usa 'none' se non vuoi i punti */
+      padding-left: 0; /* Elimina il padding predefinito */
+      text-align: left; /* Testo giustificato a sinistra */
+      display: inline-block; /* Centra l'elenco nel body */
+      text-align: justify; /* Giustifica il testo degli elementi dell'elenco */
+    }
+    
+    ul li {
+      margin: 5px 0; /* Distanza tra gli elementi dell'elenco */
+    }
+    
+    h2 {
+      margin-top: 20px; /* Aggiunge spazio sopra il titolo */
+    }
+    
+    /* Stile personalizzato per i punti, se necessario */
+    ul.custom-bullets li::before {
+      content: "\2022";  /* Bullet Unicode */
+      color: #000; /* Colore dei punti, da modificare a piacimento */
+      font-weight: bold; /* Rende i punti in grassetto */
+      display: inline-block; 
+      width: 1em; /* Spazio prima del testo */
+      margin-left: -1em; /* Allinea i punti a sinistra */
+    }
+    </style>
+    </head>
+    <body>
+    
+    <ul class="custom-bullets">
+      <li>Downloaded the table from the ISTAT website</li>
+      <li>Selected the total numbers divided by gender</li>
+      <li>Pasted the data into a new Excel file, sorted by age</li>
+      <li>Performed this operation for both injuries and deaths</li>
+      <li>Added a column with the sum for gender</li>
+      <li>Pasted the columns into Flourish for graphing</li>
+      <li>Selected column A as labels/time and columns B-C as values</li>
+      <li>Modified the colors to better fit our website</li>
+    </ul>
+    
+    </body>
+    </html>
